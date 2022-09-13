@@ -6,37 +6,6 @@ class Q3 {
     E e1 = new E();
     E e2 = new F();
     F f1 = new F();
-    
-    d1.m(e2);
-    e1.m(d3);
-    e2.m(f1);
-    f1.m(e2);
-    d2.m(d3);
-  }
-}
-
-class D {
-  void m(Object a) { System.out.println("AO"); }
-  void m(E a) { System.out.println("AB"); }
-  void m(F a) { System.out.println("AC"); }
-}
-class E extends D {
-  void m(D d) { System.out.println("BA"); }
-  void m(E a) { System.out.println("BB"); }
-  void m(F a) { System.out.println("BC"); }
-}
-class F extends E {
-  void m(D d) { System.out.println("CA"); }
-  void m(F a) { System.out.println(""); }
-}
-class Q3 {
-  public static void main(String[] args) {
-    D d1 = new D();
-    D d2 = new E();
-    D d3 = new F();
-    E e1 = new E();
-    E e2 = new F();
-    F f1 = new F();
 
     d1.m(e2);
     e1.m(d3);
